@@ -1,0 +1,20 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Compile and Run",
+      "type": "shell",
+      "options": {
+        "shell": {
+          "executable": "cmd.exe"
+        }
+      },
+      "command": "for %f in (src\\employee\\management\\system\\*.java) do javac -cp lib/mysql-connector-j-8.0.31.jar -d build %f && java -cp build;lib/mysql-connector-j-8.0.31.jar employee.management.system.Conn",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": []
+    }
+  ]
+}
