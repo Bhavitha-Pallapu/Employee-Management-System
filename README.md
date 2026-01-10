@@ -33,7 +33,7 @@ This Employee Management System addresses the common challenge of manually manag
 
 - **Frontend**: Java Swing (GUI Framework)
 - **Backend**: Java
-- **Database**: [Specify your database - e.g., MySQL, PostgreSQL, SQLite]
+- **Database**: [MySQL]
 
 ## Getting Started
 
