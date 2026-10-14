@@ -1,6 +1,6 @@
 # Employee Management System
 
-A comprehensive desktop application designed to streamline employee record management, attendance tracking, and HR administrative tasks.
+A comprehensive desktop application designed to streamline employee record management, attendance tracking, and HR administrative tasks
 
 ## Overview
 
