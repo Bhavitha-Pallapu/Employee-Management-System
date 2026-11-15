@@ -12,6 +12,11 @@
 hs_err_pid*
 replay_pid*
 
+# Local configuration
+.env
+.env.*
+!.env.example
+
 # IDE metadata
 .idea/
 *.iml

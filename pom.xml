@@ -15,41 +15,31 @@
         <maven.compiler.release>17</maven.compiler.release>
     </properties>
 
-    <!-- The legacy NetBeans project is retained for now; Maven provides a reproducible root build. -->
     <dependencies>
         <dependency>
             <groupId>local.employee-management</groupId>
             <artifactId>mysql-connector</artifactId>
             <version>8.0.31</version>
             <scope>system</scope>
-            <systemPath>${project.basedir}/Employee-Management-System/lib/mysql-connector-j-8.0.31.jar</systemPath>
+            <systemPath>${project.basedir}/lib/mysql-connector-j-8.0.31.jar</systemPath>
         </dependency>
         <dependency>
             <groupId>local.employee-management</groupId>
             <artifactId>jcalendar</artifactId>
             <version>1.4</version>
             <scope>system</scope>
-            <systemPath>${project.basedir}/Employee-Management-System/lib/jcalendar-1.4.jar</systemPath>
+            <systemPath>${project.basedir}/lib/jcalendar-1.4.jar</systemPath>
         </dependency>
         <dependency>
             <groupId>local.employee-management</groupId>
             <artifactId>rs2xml</artifactId>
             <version>1.0</version>
             <scope>system</scope>
-            <systemPath>${project.basedir}/Employee-Management-System/lib/rs2xml.jar</systemPath>
+            <systemPath>${project.basedir}/lib/rs2xml.jar</systemPath>
         </dependency>
     </dependencies>
 
     <build>
-        <sourceDirectory>${project.basedir}/Employee-Management-System/src</sourceDirectory>
-        <resources>
-            <resource>
-                <directory>${project.basedir}/Employee-Management-System/src</directory>
-                <includes>
-                    <include>icons/**</include>
-                </includes>
-            </resource>
-        </resources>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
