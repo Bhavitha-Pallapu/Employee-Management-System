@@ -1,0 +1,30 @@
+# Compiled Java files
+*.class
+
+# Build output
+/build/
+/target/
+/dist/
+/nbbuild/
+
+# Logs and JVM crash dumps
+*.log
+hs_err_pid*
+replay_pid*
+
+# IDE metadata
+.idea/
+*.iml
+*.iws
+*.ipr
+.metadata/
+.settings/
+.project
+.classpath
+.vscode/
+
+# NetBeans private files
+**/nbproject/private/
+
+# OS files
+.DS_Store
