@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>employee.management</groupId>
+    <artifactId>employee-management-system</artifactId>
+    <version>1.0.0</version>
+    <name>Employee Management System</name>
+    <description>A Java Swing employee management application backed by MySQL.</description>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.release>17</maven.compiler.release>
+    </properties>
+
+    <!-- The legacy NetBeans project is retained for now; Maven provides a reproducible root build. -->
+    <dependencies>
+        <dependency>
+            <groupId>local.employee-management</groupId>
+            <artifactId>mysql-connector</artifactId>
+            <version>8.0.31</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/Employee-Management-System/lib/mysql-connector-j-8.0.31.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>local.employee-management</groupId>
+            <artifactId>jcalendar</artifactId>
+            <version>1.4</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/Employee-Management-System/lib/jcalendar-1.4.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>local.employee-management</groupId>
+            <artifactId>rs2xml</artifactId>
+            <version>1.0</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/Employee-Management-System/lib/rs2xml.jar</systemPath>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <sourceDirectory>${project.basedir}/Employee-Management-System/src</sourceDirectory>
+        <resources>
+            <resource>
+                <directory>${project.basedir}/Employee-Management-System/src</directory>
+                <includes>
+                    <include>icons/**</include>
+                </includes>
+            </resource>
+        </resources>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.13.0</version>
+            </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>3.5.0</version>
+                <configuration>
+                    <mainClass>employee.management.system.Home</mainClass>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>

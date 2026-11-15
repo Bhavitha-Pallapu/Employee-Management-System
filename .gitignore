@@ -1,51 +1,30 @@
-# Compiled class files
+# Compiled Java files
 *.class
 
-# Log files
+# Build output
+/build/
+/target/
+/dist/
+/nbbuild/
+
+# Logs and JVM crash dumps
 *.log
-
-# Package files
-*.jar
-*.war
-*.nar
-*.ear
-*.zip
-*.tar.gz
-*.rar
-
-# JVM crash dumps
 hs_err_pid*
 replay_pid*
 
-# Maven
-/target/
-
-# Gradle
-.gradle/
-build/
-!gradle/wrapper/gradle-wrapper.jar
-
-# IntelliJ IDEA
+# IDE metadata
 .idea/
 *.iml
 *.iws
 *.ipr
-
-# Eclipse
 .metadata/
-bin/
 .settings/
 .project
 .classpath
-
-# NetBeans
-/nbproject/private/
-/build/
-/dist/
-/nbbuild/
-
-# VS Code
 .vscode/
 
-# macOS
+# NetBeans private files
+**/nbproject/private/
+
+# OS files
 .DS_Store
